@@ -11,6 +11,8 @@ public class HomeController {
 
     @RequestMapping("/")
     public String index() {
+        var orderService=new OrderService(new PaypalPaymentService());
+        orderService.placeOrder();
         String viewName = getViewName();
         return viewName;
     }
