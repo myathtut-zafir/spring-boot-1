@@ -1,9 +1,14 @@
 package com.mht.store;
 
 public class OrderService {
-    private final PaymentService paymentService;
 
-    public OrderService(PaymentService paymentService) {
+    private PaymentService paymentService;
+
+//    public OrderService(PaymentService paymentService) {
+//        this.paymentService = paymentService;
+//    }
+
+    public void setPaymentService(PaymentService paymentService) {
         this.paymentService = paymentService;
     }
 
