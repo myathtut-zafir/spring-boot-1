@@ -11,10 +11,11 @@ public class HomeController {
 
     @RequestMapping("/")
     public String index() {
-        var orderService=new OrderService();
-        orderService.placeOrder();
-        String viewName = getViewName();
-        return viewName;
+//        var orderService=new OrderService();
+//        orderService.placeOrder();
+//        String viewName = getViewName();
+//        return viewName;
+        return "viewName";
     }
 
     private String getViewName() {
